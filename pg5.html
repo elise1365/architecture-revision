@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+    <title>Computer architecture</title>
+</head>
+
+<body>
+    <article>
+        <section>
+            <h1>The history of operating systems</h1>
+            <p><strong>1940's</strong> - no OS, the programmer was also the user. Programs and data entered in binary using switches at front of machine. Output by lights. Programmer was the OS</p>
+            <p></p>
+            <p><strong>1950's</strong> - specialist perators who tended to the machine, fed the programs and delivered output to the programers. Operators were the interface between programmer and hardware</p>
+            <p></p>
+            <p><strong>1960's</strong> - programmer punched instructions on control cards which were inserted at the apropriate places before and after program cards and data cards</p>
+            <p></p>
+            <p><strong>Late 1960's + 1970's</strong> - first attempts to provide interactive use of a compuer. The issue of protecting one program from another became important</p>
+            <p></p>
+            <p><strong>1980's</strong> - networking and communication</p>
+            <p></p>
+            <p><strong>1990's</strong> - move to open systems, a move to build a generic OS which will run on any hardware</p>
+        </section>
+        <section>
+            <h1>OS</h1>
+            <p>An OS is a program that is run every time a computer is turned on. It is siftware which makes the hardware more useful & user friendly</p>
+            <p>OS is below the application program and above the hardware, it acts a middleman between these two</p>
+            <p>OS jobs:</p>
+            <ul>
+                <li>Helps a user to develop and run programs by providing a convenient environment</li>
+                <li>Starting and stopping programs and sharing CPU between them</li>
+                <li>Managing memory - identifies and arranges which parts of memory are in use and which parts are free</li>
+                <li>I/O management - covers up differences between alternative makes and models of devices</li>
+                <li>File systems/organisation</li>
+                <li>Protection - protects from program interference</li>
+                <li>Networking - covers up the difference between machines</li>
+                <li>Error handling and recovery</li>
+            </ul>
+        </section>
+        <section>
+            <h1>GUI and command interpreters</h1>
+            <p>Applications that sit on top of the OS</p>
+        </section>
+        <section>
+            <h1>System service interface</h1>
+            <p>A set of functions provided by an OS to enable a user to request a service from it</p>
+        </section>
+        <section>
+            <h1>Kernel</h1>
+            <p>The central component of OS</p>
+            <p>Makes the software to interact with the hardwarw to get a specific task done</p>
+            <p>Decides the amount of resources to be used by every application + decides what programs to be executed and in what order</p>
+            <p>Has separate space in memory so it functions independantly</p>
+            <p>Acts as a central authority which guides memory and keeps an eye on all the hardware and software data flow</p>
+            <p>System call - every process which starts on a system demands the resources from the kernel</p>
+        </section>
+        <section>
+            <h1>Monolithic kernel</h1>
+            <p>The entire OS is run as a single large program in kernel space</p>
+            <p>User services and kernel services are both kept in the same address space</p>
+            <ul>
+                <li>+ Higher performance</li>
+                <li>- Higher risk of system crash</li>
+            </ul>
+        </section>
+        <section>
+            <h1>Microkernel</h1>
+            <p>Based on a smaller kernel that provides only the essential OS services</p>
+            <p>User services and kernel services are kept in separate address spaces</p>
+            <ul>
+                <li>+ smaller in size</li>
+                <li>- greater access time</li>
+                <li>- slow execution time</li>
+            </ul>
+        </section>
+        <section>
+            <h1>Modes</h1>
+            <p>2 modes:</p>
+            <ol>
+                <li><strong>Kernel mode</strong> - the CPU can execute all of its instructions including extra priviledged instructions. If a program is executed in kernel mode, it has direct access to memory, hardware and such resources</li>
+                <li><strong>User mode</strong> - the CPU can only execute a subset of its instructions. If a program is executed in user mode, it does not have access to memory, hardware and such resources</li>
+            </ol>
+        </section>
+        <section>
+            <h1>Types of OS</h1>
+            <ul>
+                <li><strong>Batch systems</strong> - data and commands to manipulate the program and data are all submitted together as a job. Little interaction between users and executing a program</li>
+                <li><strong>Interactive systems</strong> - uses keyboard, mouse and screen. Makes it possible to intervene directly while a program is being developed or as it is running</li>
+                <li><strong>General purpose OS</strong> - combination of boatch and interactive OS</li>
+                <li><strong>Network OS</strong> - to share resources such as printers and databases across a network</li>
+                <li><strong>Distributed systems</strong> - consists of a group of machines acting together as one</li>
+                <li><strong>Specialist systems</strong> - dedicated to processing large volumes of data which are maintained in an organised way</li>
+            </ul>
+        </section>
+        <section>
+            <h1>Functions of an OS</h1>
+            <ul>
+                <li>Process management</li>
+                <li>Memory management</li>
+                <li>I/O management</li>
+                <li>File storage</li>
+                <li>Network management</li>
+            </ul>
+        </section>
+        <a href="pg6.html">Next page</a>
+    </article>
+</body>

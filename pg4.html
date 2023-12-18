@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <title>Computer architecture</title>
+</head>
+
+<body>
+    <article>
+        <section>
+            <h1>Computer memory systems</h1>
+            <p>Computer memory is the area where the computer stores data, it stores information temporarily or permanently and provides the CPU with instructions</p>
+        </section>
+        <section>
+            <h1>Memory characteristics</h1>
+            <ul>
+                <li><strong>Location</strong> - internal (main) memory or external (peripheral storage devices)</li>
+                <li><strong>Capacity</strong> - words/bytes</li>
+                <li><strong>Unit of transfer</strong> - number of bits read out or written at a time</li>
+                <li><strong>Access method</strong></li>
+                <li><strong>Performance</strong></li>
+                <li><strong>Physical type</strong> - semiconductor, magnetic optical, magneto-optical</li>
+                <li><strong>Physical characteristics</strong> - volatile/ non volatile and erasable/non erasable memory</li>
+            </ul>
+            <p></p>
+            <p>Access methods:</p>
+            <ul>
+                <li><strong>Sequential</strong> access - memory is organized into units of data called records, access is made in a specific linear sequence</li>
+                <li><strong>Direct</strong> access - individual blocks or records have a unique address based on physical location</li>
+                <li><strong>Random</strong> access - each addressable location in memory has a unique physically wired in addressing mechanism</li>
+                <li><strong>Associative</strong> access - random access type of memory that enables one to make a comparison of desired bit locations within a word for a specified match, a word is retrieved based on a portion of its contents rather than its address</li>
+            </ul>
+            <p></p>
+            <p>Performance:</p>
+            <ul>
+                <li><strong>Access time</strong> - for RAM this is the time taken to perform a read/write operation. For non RAM, this is the time taken to position the read-write mechanism at the desired location</li>
+                <li><strong>Cycle time</strong> - access time + additional time required before a second access can commence</li>
+                <li><strong>Transfer rate</strong> - rate at which data can be transferred in or out of a memory unit, for RAM it is 1/cycle time</li>
+            </ul>
+        </section>
+        <section>
+            <h1>Memory hierarchy</h1>
+            <p>As you go down the hierarchy, cost reduces, capacity increases, access time increases and frequency of access of the memory by processor reduces</p>
+            <img src="html memory hierarchy img.png" alt="Image showing the hierarchy of memory">
+            <p>The 3 things to consider when choosing memory are capacity, access time and cost</p>
+            <p>Greater capacity = lower cost per unit and slower access time</p>
+            <p>Faster access time = greater cost</p>
+        </section>
+        <section>
+            <h1>Cache memory</h1>
+            <p>Combines dast and expensive memory with less expensive and lower speed</p>
+            <p>Cache contains a copy of portions of main memory</p>
+            <p>How cache works: </p>
+            <ul>
+                <li>A large and slow main memory is combined with a smaller faster cache memory</li>
+                <li>When the processor attempts to read a word of memory, a check is made to determine if the word is in the cache, if so the word is delivered to the processor, if not a block of main memory is read into the cache and the word is delivered to the processor</li>
+            </ul>
+            <p>Multi level cache organisation:</p>
+            <img src="html multi level cache img.png" alt="Image showing different levels of cache, and how as each level gets closer to main memory it gets slower">
+        </section>
+        <a href="pg5.html">Next page</a>
+    </article>
+</body>

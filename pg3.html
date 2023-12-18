@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <title>Computer architecture</title>
+    <style>
+        .advantages {
+            list-style-type:none;
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <section>
+            <h1>Interconnection structures</h1>
+            <p>The collection of paths that connect modules</p>
+            <p>The design of the interconnection structure depends on the exchanges that need to be made</p>
+            <p>Types of exchanges:</p>
+            <ul>
+                <li><strong>Memory</strong> - typically a memory module consists of N words of equal length, each word is assigned a unique numerical address, a word can be written or read into memory, the location for an operation is specified by an address</li>
+                <li><strong>I/O module</strong> - 2 operations (read/write), may control more than one external device, we can refer to each of the interfaces to an external device as a port and give each a unique address. There are external data paths for the input and output of data with an external device. It may be able to send interupt signals to the processor</li>
+                <li><strong>Processor</strong> - reads iinstructions and data, wirtes data after processing and uses control signals to control the overall operation of the system. Recieves interupt signals</li>
+            </ul>
+            <p>The interconnection structre must support:</p>
+            <ul>
+                <li><strong>Memory to processor transfers</strong> - the processor reads an instruction/unit of data from memory</li>
+                <li><strong>Processor to memory transfers</strong> - processor writes a unit of data to memory</li>
+                <li><strong>I/O to processor transfers</strong></li>
+                <li><strong>Processor to I/O transfers</strong></li>
+                <li><strong>I/O to/from memory</strong> - I/O us allowed to exchange data directly with memory without going through the processor</li>
+            </ul>
+        </section>
+        <section>
+            <h1>Bus</h1>
+            <p>A bus is a communication pathway connecting 2 or more devices</p>
+            <p>It has a shared transmission medium, so multiple devices can connect to the bus, and a signal transmitted by one device is available for reception from all other devices</p>
+            <p>Only one device can successfully transmit at a time</p>
+            <p>A bus consists of multiple communication pathways, each transmits a signal representing binary 1/0</p>
+            <p><strong>Bus operation:</strong></p>
+            <p>If one module wishes to send data to another it must obtain the use of the bus and transfer the data via the bus</p>
+            <p>If one module wishes to request data from another module, it must obtain the use of the bus, and transfer a rquest to other modules over the appropriate control and address lines</p>
+        </section>
+        <section>
+            <h1>Functional groups</h1>
+            <p>Lines are classed as one of these</p>
+            <ul>
+                <li><strong>Data</strong> lines = provide a path for moving data among system modules</li>
+                <li><strong>Address</strong> lines = designate the source or destination of the data on the data bus</li>
+                <li><strong>Control</strong> lines = control the access to and the use of the data and address lines, control signals</li>
+            </ul>
+        </section>
+        <section>
+            <h1>Point to point interconnection</h1>
+            <p>Contemporary systems rely more on p2p rather than shared bus systems because there are electrical constraints that come from buses</p>
+            <ul class="advantages">
+                <li>+ Lower latency</li>
+                <li>+ higher data rate</li>
+                <li>+ better scalability</li>
+            </ul>
+        </section>
+        <a href="pg4.html">Next page</a>
+    </article>
+</body>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <title>Computer architecture</title>
+</head>
+
+<body>
+    <article>
+        <section>
+            <h1>CPU scheduling</h1>
+            <ul>
+                <li>By switching the CPU among processes, the OS can make the computer more productive</li>
+                <li>A process is executed until it must wait, usually for a I/O request</li>
+                <li>Several processes are kept in memory st one time. When a process has to wait, the OS takes the CPU away from it and gives the CPU to another process</li>
+            </ul>
+        </section>
+        <section>
+            <h1>I/O cycle</h1>
+            <ul>
+                <li>Process execution consists of a cycle of CPU execution + I/O wait</li>
+                <li>Process execution begins with a CPU burst, then I/O burst etc</li>
+                <li>The final CPU burst ends with a system request to terminate execution</li>
+            </ul>
+        </section>
+        <section>
+            <h1>CPU scheduler</h1>
+            <p>When the CPU becomes idle, the OS must select one of the processes in the queue ready to be executed. The selection process is carried out by the CPU scheduler</p>
+        </section>
+        <section>
+            <h1>Non preemptive scheduling</h1>
+            <p>Process cannot be stopped by other processes, new processes only selected when a process terminates or a process switches from running to waiting</p>
+        </section>
+        <section>
+            <h1>Preemptive scheduling</h1>
+            <p>When a process with higher priority arrives, running of current process may be stopped. Special hardware is required for preemptive scheduling</p>
+        </section>
+        <section>
+            <h1>Dispatcher</h1>
+            <p>Takes a process to the desired queue</p>
+            <p>Gives a process control after it has been selected by the short term cheduler. Involves switching context, switching to user mode or jumping to the proper location to restart a program</p>
+        </section>
+        <section>
+            <h1>Scheduling criteria</h1>
+            <ul>
+                <li><strong>CPU utilisation</strong> - keep the CPU as busy as possible</li>
+                <li><strong>Throughput</strong> - number of processes that complete their execution per time unit</li>
+                <li><strong>Turnaround time</strong> - amount of time to execute a process, exit time - arrival time</li>
+                <li><strong>Waiting time</strong> - amount of time a process has been waiting in the ready queue, turnaround time - burst time</li>
+                <li><strong>Response time</strong> - amount of time it takes from when a request was submitted to when the response is produced</li>
+            </ul>
+        </section>
+        <a href="pg8.html">Next page</a>
+    </article>
+</body>

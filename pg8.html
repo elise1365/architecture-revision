@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <title>Computer architecture</title>
+    <style>
+        .eval{
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <section>
+            <h1>First come first served scheduling</h1>
+            <p>The process that requests the CPU first is allocated the CPU</p>
+            <p>FIFO queue</p>
+            <p>Evaluation</p>
+            <ul class="eval">
+                <li>+ easy to use/ implement</li>
+                <li>- poor in performance</li>
+                <li>- high wait time</li>
+            </ul>
+        </section>
+        <section>
+            <h1>Shortest job first scheduling</h1>
+            <p>The process with the shortest execution time goes first</p>
+            <p>Preemptive or non preemptive</p>
+        </section>
+        <section>
+            <h1>Priority first scheduling</h1>
+            <p>Priority number associated with each process, SPU allocated to process with highest priority (lowest number)</p>
+            <p>Preemptive or non preemptive</p>
+            <p>PRoblem with priority scheduling is starvation/indefinite blocking</p>
+            <p><strong>Aging</strong> solves this problem by gradually increasing the priority of processes that wait in the system for a long time</p>
+        </section>
+        <section>
+            <h1>Round robin scheduling</h1>
+            <p>Designed specifically for time sharing systems</p>
+            <p>Similar to FCFS but preemption is added, each process gets a small unit of CPU time (time slice) and after this time the process is preempted and either terminates or is added to the end of the FIFO queue</p>
+        </section>
+        <section>
+            <h1>Multilevel queue scheduling</h1>
+            <p>Ready queue split into separate queues, foreground (interactive) and background (batch) processes</p>
+            <p>Processes added permanently to one queue</p>
+            <p>Each queue has its own scheduling algorithm</p>
+        </section>
+        <section>
+            <h1>Multilevel feedback queue scheduling</h1>
+            <p>Process is not permanently assigned to one queue</p>
+        </section>
+        <section>
+            <h1>Gantt charts</h1>
+            <img src="html gantt chart img.png" alt="Shows an example of a gantt chart">
+        </section>
+    </article>
+</body>

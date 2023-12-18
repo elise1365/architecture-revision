@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+    <title>Computer architecture</title>
+</head>
+
+<body>
+    <article>
+        <section>
+            <h1>Process</h1>
+            <p>The unit of work in a computer system/ a sequence of states resulting from the action of a set of instructions on the states as they develop</p>
+            <p>Two aspects of any process: </p>
+            <ol>
+                <li><strong>Static part</strong> - resources allocated to the process</li>
+                <li><strong>Dynamic part</strong> - a program in action</li>
+            </ol>
+            <p>Must be possible to represent one task (static) and a variable number of threads (dynamic)</p>
+        </section>
+        <section>
+            <h1>How does the OS manage processes</h1>
+            <ul>
+                <li>The OS maintains a data structure known as PCB (process control block) for each process. The PCB contains useful information such as the current process state, the next instruction to perform and currently allocated devices to the process</li>
+                <li>PCB allows OS to manage lots of different processes</li>
+            </ul>     
+        </section>
+        <section>
+            <h1>Multithreading</h1>
+            <p>Need for this is caused by OS everhead</p>
+            <p>A number of paths of execution through the program at the same time. If one thread is blocked, another can execute</p>
+            <p>No need to save and restore full state of the machine, as its using tje sa,e memory, just jumping to another location in the program code</p>
+            <p>Each thread must maintain some of its own state information</p>
+            <p><strong>Multi threading enables the processing of multiple threads at one time, rather than multiple processes</strong></p>
+            <p>Types of threads</p>
+            <ul>
+                <li><strong>User threads</strong> - above the kernel, without kernel support. The threads that application programmers use in their programs</li>
+                <li><strong>Kernel threads</strong> - are supported within the kernel of the OS itself. OS handles all the switching between threads, all modern OSs support kernel level threads, allowing the kernel to perform multiple simultaneous tasks/to service multiple kernel system calls simultaneously</li>
+            </ul>
+        </section>
+        <section>
+            <h1>Threads</h1>
+            <p>Thread is in one of 2 different states</p>
+            <ol>
+                <li><strong>Run</strong> - ready and able to do some work</li>
+                <li><strong>Wait</strong> - unable to use the CPU, waiting for some event</li>
+            </ol>
+            <p>A thread may stop using the CPU for 3 reasons:</p>
+            <ol>
+                <li><strong>Voluntarily</strong> - wait state</li>
+                <li><strong>Termination</strong> - terminating a thread/whole process</li>
+                <li><strong>Preemption</strong> - when a thread has used up its share of time/ CPU is needed to handle urgent work, the OS takes the processor from a thread</li>
+            </ol>
+        </section>
+        <section>
+            <h1>Context switching</h1>
+            <p>Reallocating a processor from one thread to another</p>
+            <p>Called when:</p>
+            <ul>
+                <li>A thread loses control of the processor and moves into the wait state</li>
+                <li>A timer interupts to tell a thread its used up its time slice</li>
+            </ul>
+            <p>It is essential to save the current state of the machine so when the thread is eligible to run again, it can be set up correctly and the thread will continue</p>
+        </section>
+        <section>
+            <h1>Thread scheduling</h1>
+            <p>Main objective of the scheduler is to see that the CPU is shared among all contending threads as fairly as possible</p>
+            <p>Scheduler tries to make the responses time as short as possible</p>
+            <p>Thread priority - order all ready threads by priority</p>
+            <p>Thread multilevel priority queues - split queues into high and low priority queues</p>
+        </section>
+        <a href="pg7">Next page</a>
+    </article>
+</body>
